@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>บทที่ 4 ตรรกศาสตร์ | MathX Media</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --theme-color: #9B59B6; /* สีม่วงประจำบทที่ 4 */
+            --theme-bg: rgba(155, 89, 182, 0.15);
+        }
+
+        body {
+            background-color: #0f172a;
+            color: #f8fafc;
+            scroll-behavior: smooth;
+        }
+
+        /* Header อลังการ */
+        .lesson-header {
+            padding: 5rem 0 3rem;
+            text-align: center;
+            background: radial-gradient(circle at center, var(--theme-bg) 0%, transparent 80%);
+        }
+
+        .img-placeholder {
+            background: rgba(30, 41, 59, 0.8);
+            border: 2px dashed rgba(155, 89, 182, 0.3);
+            border-radius: 20px;
+            padding: 3rem;
+            margin: 2rem 0;
+            text-align: center;
+        }
+
+        .glass-card {
+            background: rgba(30, 41, 59, 0.6);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(12px);
+            border-radius: 20px;
+            padding: 2.5rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+
+        .quiz-section {
+            background: rgba(15, 23, 42, 0.9);
+            border-radius: 30px;
+            padding: 3rem;
+            margin-top: 5rem;
+            border: 1px solid var(--theme-bg);
+            box-shadow: 0 0 40px rgba(0,0,0,0.5);
+        }
+
+        .question-box {
+            background: rgba(30, 41, 59, 0.4);
+            padding: 2rem;
+            border-radius: 15px;
+            margin-bottom: 2rem;
+            border-left: 5px solid var(--theme-color);
+        }
+
+        .options label {
+            display: block;
+            padding: 12px 18px;
+            margin: 8px 0;
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 10px;
+            cursor: pointer;
+            transition: 0.3s ease;
+        }
+
+        .options label:hover {
+            background: var(--theme-bg);
+            border-color: var(--theme-color);
+            transform: translateX(5px);
+        }
+
+        .btn-action {
+            background: var(--theme-color);
+            color: #fff;
+            padding: 1rem 3rem;
+            border-radius: 50px;
+            font-weight: 800;
+            text-decoration: none;
+            display: inline-block;
+            border: none;
+            cursor: pointer;
+            box-shadow: 0 0 25px rgba(155, 89, 182, 0.4);
+            transition: 0.4s;
+            font-size: 1.1rem;
+        }
+
+        .btn-action:hover {
+            transform: scale(1.05) translateY(-3px);
+            box-shadow: 0 0 40px rgba(155, 89, 182, 0.6);
+            background: #fff;
+            color: var(--theme-color);
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-left">
+            <a href="index.html" style="text-decoration: none; display: flex; align-items: center; color: inherit;">
+                <img src="logo.png" alt="Logo" class="logo-img">
+                <span class="logo-text">MathX Media</span>
+            </a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">หน้าแรก</a></li>
+            <li><a href="video.html">คลังวิดีโอ</a></li>
+            <li><a href="exercises.html">แบบฝึกหัด</a></li>
+            <li><a href="lesson5.html" style="color: var(--theme-color);">บทถัดไป <i class="fas fa-chevron-right"></i></a></li>
+        </ul>
+    </nav>
+
+    <div class="lesson-header">
+        <div class="container reveal">
+            <h1 style="font-size: 3.5rem; margin-bottom: 1rem; background: linear-gradient(to right, #fff, var(--theme-color)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; filter: drop-shadow(0 0 10px rgba(155,89,182,0.3));">
+                บทที่ 4: ตรรกศาสตร์
+            </h1>
+            <p style="color: #94a3b8; font-size: 1.3rem;">Mathematical Logic - พื้นฐานการตัดสินใจของเงื่อนไขโปรแกรม</p>
+        </div>
+    </div>
+
+    <div class="container">
+        
+        <div class="img-placeholder reveal">
+    <img src="ตรรกศาสตร์.JPEG" alt="Description">
+</div>
+        
+
+        <article class="glass-card reveal">
+            <h3 style="color: var(--theme-color); margin-bottom: 1.5rem;"><i class="fas fa-lightbulb"></i> สรุปใจความสำคัญ</h3>
+            <p style="line-height: 1.8;">ตรรกศาสตร์คือวิชาที่ว่าด้วยการใช้เหตุผล เพื่อตรวจสอบว่าประโยคหรือเงื่อนไขต่าง ๆ มีค่าความจริงเป็นอย่างไร:</p>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin-top: 2rem;">
+                <div style="background: rgba(255,255,255,0.02); padding: 1.5rem; border-radius: 15px; border: 1px solid rgba(155, 89, 182, 0.2);">
+                    <h4 style="color: var(--theme-color); margin-bottom: 10px;">ประพจน์ (Proposition)</h4>
+                    <p style="font-size: 0.95rem; color: #cbd5e1;">ประโยคบอกเล่าหรือปฏิเสธที่มีค่าความจริงเป็น "จริง" หรือ "เท็จ" อย่างใดอย่างหนึ่งเท่านั้น</p>
+                </div>
+                <div style="background: rgba(255,255,255,0.02); padding: 1.5rem; border-radius: 15px; border: 1px solid rgba(155, 89, 182, 0.2);">
+                    <h4 style="color: var(--theme-color); margin-bottom: 10px;">ตัวเชื่อม (Connectives)</h4>
+                    <p style="font-size: 0.95rem; color: #cbd5e1;">สัญลักษณ์ที่ใช้เชื่อมประพจน์เข้าด้วยกัน เช่น และ (∧), หรือ (∨), ถ้า...แล้ว (→)</p>
+                </div>
+            </div>
+        </article>
+
+        <div class="glass-card reveal" style="text-align: center; border: 1px solid var(--theme-bg);">
+            <h3 style="margin-bottom: 1.5rem;"><i class="fas fa-file-pdf" style="color: #ef4444;"></i> เอกสารประกอบการเรียน</h3>
+            <p style="color: #94a3b8; margin-bottom: 2rem;">ดาวน์โหลดเอกสาร PDF บทที่ 4 เพื่อศึกษาเรื่องการสร้างตรรกะที่สมมูลกันและการหาค่าความจริงของประพจน์เชิงซ้อน</p>
+            <a href="บทที่ 4 ตรรกศาสตร์.pdf" download class="btn-action">
+                <i class="fas fa-download"></i> Download Study Guide
+            </a>
+        </div>
+
+        <section class="quiz-section reveal" id="quiz-section">
+            <h2 style="text-align: center; margin-bottom: 4rem; color: var(--theme-color); font-size: 2.2rem;">📝 แบบทดสอบท้ายบท</h2>
+            <form id="quiz-form">
+                <div class="question-box">
+                    <p>1. ประโยคใดต่อไปนี้ "ไม่เป็น" ประพจน์?</p>
+                    <div class="options">
+                        <label><input type="radio" name="q1"> 5 + 2 = 10</label>
+                        <label><input type="radio" name="q1" class="correct"> วันนี้กินอะไรดี?</label>
+                        <label><input type="radio" name="q1"> กรุงเทพเป็นเมืองหลวง</label>
+                    </div>
+                </div>
+
+                <div class="question-box">
+                    <p>2. "จริง และ เท็จ" (T ∧ F) มีค่าความจริงเป็นอะไร?</p>
+                    <div class="options">
+                        <label><input type="radio" name="q2"> จริง (T)</label>
+                        <label><input type="radio" name="q2" class="correct"> เท็จ (F)</label>
+                        <label><input type="radio" name="q2"> สรุปไม่ได้</label>
+                    </div>
+                </div>
+
+                <div class="question-box">
+                    <p>3. ตัวเชื่อมใดที่สัญลักษณ์คือ "∨"?</p>
+                    <div class="options">
+                        <label><input type="radio" name="q3" class="correct"> หรือ (OR)</label>
+                        <label><input type="radio" name="q3"> และ (AND)</label>
+                        <label><input type="radio" name="q3"> ถ้า...แล้ว</label>
+                    </div>
+                </div>
+
+                <div class="question-box">
+                    <p>4. นิเสธของค่า "จริง (T)" คือข้อใด?</p>
+                    <div class="options">
+                        <label><input type="radio" name="q4" class="correct"> เท็จ (F)</label>
+                        <label><input type="radio" name="q4"> จริง (T)</label>
+                        <label><input type="radio" name="q4"> เป็นศูนย์</label>
+                    </div>
+                </div>
+
+                <div class="question-box">
+                    <p>5. "ถ้า 1+1=2 แล้ว 2+2=5" ประโยคนี้มีค่าความจริงเป็นอะไร?</p>
+                    <div class="options">
+                        <label><input type="radio" name="q5"> จริง (T)</label>
+                        <label><input type="radio" name="q5" class="correct"> เท็จ (F)</label>
+                        <label><input type="radio" name="q5"> หาค่าไม่ได้</label>
+                    </div>
+                </div>
+
+                <div style="text-align: center; margin-top: 4rem;">
+                    <button type="button" id="submit-quiz" class="btn-action">
+                        <i class="fas fa-check-circle"></i> ส่งคำตอบและตรวจคะแนน
+                    </button>
+                </div>
+            </form>
+            <div id="score-display"></div>
+        </section>
+    </div>
+
+    <footer style="text-align: center; padding: 5rem 0; color: #475569; border-top: 1px solid rgba(255,255,255,0.05);">
+        <p>&copy; 2026 MathX Media | Computer Mathematics Learning</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

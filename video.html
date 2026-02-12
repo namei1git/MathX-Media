@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>คลังวิดีโอ | MathX Media</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* สไตล์สำคัญเพื่อให้วิดีโอแสดงผลในกรอบ card เดิมของคุณ */
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* อัตราส่วน 16:9 */
+            height: 0;
+            overflow: hidden;
+            border-radius: 10px;
+            background: #000;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">MathX <span>Video</span></div>
+            <ul class="nav-links">
+                <li><a href="index.html">หน้าแรก</a></li>
+                <li><a href="video.html" style="font-weight: bold; color: var(--primary);">คลังวิดีโอ</a></li>
+                <li><a href="exercises.html">แบบฝึกหัด</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="reveal" style="text-align: center; margin-bottom: 3rem;">
+            <h1>🎥 คลังวิดีโอการสอน</h1>
+            <p>เรียนรู้ผ่านวิดีโอ เข้าใจง่าย พร้อมแอนิเมชันประกอบ</p>
+        </div>
+
+        <div class="grid-container" style="display:grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 25px;">
+            
+            <div class="card reveal" style="animation-delay: 0.1s;">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/6_heJQ7nsrQ" allowfullscreen></iframe>
+                </div>
+                <h3 style="margin-top:15px;">บทที่ 1: ระบบจำนวนจริง</h3>
+            </div>
+
+            <div class="card reveal" style="animation-delay: 0.2s;">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/9S4e58f9-VA" allowfullscreen></iframe>
+                </div>
+                <h3 style="margin-top:15px;">บทที่ 2: ระบบเลขฐาน</h3>
+            </div>
+
+            <div class="card reveal" style="animation-delay: 0.3s;">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/Tk6DujvYets" allowfullscreen></iframe>
+                </div>
+                <h3 style="margin-top:15px;">บทที่ 3: การคำนวณเลขฐาน</h3>
+            </div>
+
+            <div class="card reveal" style="animation-delay: 0.4s;">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/eTBFewOC8Ys" allowfullscreen></iframe>
+                </div>
+                <h3 style="margin-top:15px;">บทที่ 4: ตรรกศาสตร์</h3>
+            </div>
+
+            <div class="card reveal" style="animation-delay: 0.5s;">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/uKOPMzH4IJY" allowfullscreen></iframe>
+                </div>
+                <h3 style="margin-top:15px;">บทที่ 5: พีชคณิตบูลลีน</h3>
+            </div>
+
+            <div class="card reveal" style="animation-delay: 0.6s;">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/qVt_fdsvHqw" allowfullscreen></iframe>
+                </div>
+                <h3 style="margin-top:15px;">บทที่ 6: เมทริกซ์</h3>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+<div class="nav-left">
+    <a href="index.html" style="text-decoration: none; display: flex; align-items: center; color: inherit;">
+        <img src="logo.png" alt="Logo" class="logo-img"> 
+        <span class="logo-text" style="cursor: pointer;">MathX Media</span>
+    </a>
+</div>

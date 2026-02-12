@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MathX Media | สื่อการสอนคณิตศาสตร์คอมพิวเตอร์</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-left">
+            <img src="logo.png" alt="Logo" class="logo-img"> <span class="logo-text">MathX Media</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">หน้าแรก</a></li>
+            <li><a href="#lessons">บทเรียน</a></li>
+            <li><a href="video.html">คลังวิดีโอ</a></li>
+            <li><a href="exercises.html">แบบฝึกหัด</a></li>
+            <li><a href="creator.html">ผู้จัดทำ</a></li>
+            <li><a href="about.html">เกี่ยวกับ</a></li>
+        </ul>
+    </nav>
+
+    <header style="height: 85vh; display: flex; align-items: center; text-align: center; background: radial-gradient(circle at center, rgba(56, 189, 248, 0.15) 0%, transparent 70%);">
+        <div class="container reveal">
+            <h1 style="
+                font-size: 5rem; 
+                font-weight: 800; 
+                margin-bottom: 1.5rem;
+                background: linear-gradient(135deg, #fff 30%, #38bdf8 100%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                filter: drop-shadow(0 0 30px rgba(56, 189, 248, 0.4));
+                letter-spacing: -2px;
+                line-height: 1.2;
+                animation: float 6s ease-in-out infinite;
+            ">คณิตศาสตร์<br>คอมพิวเตอร์</h1>
+            
+            <p style="font-size: 1.4rem; color: #cbd5e1; max-width: 800px; margin: auto; line-height: 1.6;">
+                สื่อการเรียนรู้ยุคใหม่ที่รวบรวมเนื้อหาตั้งแต่ <span style="color: #38bdf8; font-weight: bold;">ระบบจำนวน</span> 
+                ไปจนถึง <span style="color: #38bdf8; font-weight: bold;">เมทริกซ์</span> 
+                พร้อมแบบทดสอบออนไลน์และวิดีโออธิบายเข้าใจง่าย
+            </p>
+
+            <div style="margin-top: 45px;">
+                <a href="#lessons" class="btn" style="padding: 1rem 2.5rem; font-size: 1.1rem; box-shadow: 0 0 20px rgba(56, 189, 248, 0.4); backdrop-filter: blur(5px);">เริ่มต้นเรียนรู้</a>
+                <a href="video.html" class="btn" style="background: rgba(255,255,255,0.05); border: 1px solid rgba(56, 189, 248, 0.5); color: #38bdf8; margin-left: 15px; padding: 1rem 2.5rem; font-size: 1.1rem; backdrop-filter: blur(5px);">ชมวิดีโอทั้งหมด</a>
+            </div>
+        </div>
+    </header>
+
+    <style>
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        /* ปรับปรุงขนาดฟอนต์สำหรับมือถือ */
+        @media (max-width: 768px) {
+            header h1 { font-size: 3rem !important; }
+        }
+    </style>
+
+    <section id="lessons" class="container">
+        <div style="text-align: center; margin-bottom: 50px;">
+    <h2 style="
+        font-size: 2.5rem; 
+        display: inline-block; 
+        position: relative; 
+        padding-bottom: 10px;
+        background: linear-gradient(to right, #fff, #38bdf8);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    ">
+        <i class="fas fa-book-reader" style="-webkit-text-fill-color: #38bdf8; margin-right: 10px;"></i> บทเรียนออนไลน์
+    </h2>
+    <div style="width: 100px; height: 4px; background: linear-gradient(to right, #38bdf8, transparent); margin: 5px auto; border-radius: 2px;"></div>
+</div>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px;">
+            <div class="glass-card reveal">
+                <i class="fas fa-calculator fa-2x" style="color: #3498DB;"></i>
+                <h3 style="margin: 15px 0;">01 ระบบจำนวนจริง</h3>
+                <p style="color: #94a3b8; font-size: 0.9rem;">ทำความรู้จักโครงสร้างตัวเลข ตรรกยะ และอตรรกยะ</p>
+                <a href="lesson1.html" style="display:block; margin-top:15px; color:var(--primary); text-decoration:none;">เข้าสู่บทเรียน <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="glass-card reveal">
+                <i class="fas fa-microchip fa-2x" style="color: #1ABC9C;"></i>
+                <h3 style="margin: 15px 0;">02 ระบบเลขฐาน</h3>
+                <p style="color: #94a3b8; font-size: 0.9rem;">ภาษาของคอมพิวเตอร์: เลขฐาน 2, 8, 10 และ 16</p>
+                <a href="lesson2.html" style="display:block; margin-top:15px; color:var(--primary); text-decoration:none;">เข้าสู่บทเรียน <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="glass-card reveal">
+                <i class="fas fa-divide fa-2x" style="color: #E67E22;"></i>
+                <h3 style="margin: 15px 0;">03 การคำนวณเลขฐาน</h3>
+                <p style="color: #94a3b8; font-size: 0.9rem;">การบวก ลบ คูณ และเทคนิคการใช้ Complement</p>
+                <a href="lesson3.html" style="display:block; margin-top:15px; color:var(--primary); text-decoration:none;">เข้าสู่บทเรียน <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="glass-card reveal">
+                <i class="fas fa-brain fa-2x" style="color: #9B59B6;"></i>
+                <h3 style="margin: 15px 0;">04 ตรรกศาสตร์</h3>
+                <p style="color: #94a3b8; font-size: 0.9rem;">การคิดหาเหตุผลด้วยค่าความจริง จริง (T) และ เท็จ (F)</p>
+                <a href="lesson4.html" style="display:block; margin-top:15px; color:var(--primary); text-decoration:none;">เข้าสู่บทเรียน <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="glass-card reveal">
+                <i class="fas fa-project-diagram fa-2x" style="color: #E74C3C;"></i>
+                <h3 style="margin: 15px 0;">05 พีชคณิตบูลลีน</h3>
+                <p style="color: #94a3b8; font-size: 0.9rem;">พื้นฐานของ Logic Gates และการลดรูปสมการ</p>
+                <a href="lesson5.html" style="display:block; margin-top:15px; color:var(--primary); text-decoration:none;">เข้าสู่บทเรียน <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="glass-card reveal">
+                <i class="fas fa-th fa-2x" style="color: #34495E;"></i>
+                <h3 style="margin: 15px 0;">06 เมทริกซ์</h3>
+                <p style="color: #94a3b8; font-size: 0.9rem;">การแก้ระบบสมการด้วย Det และกฎของเครเมอร์</p>
+                <a href="lesson6.html" style="display:block; margin-top:15px; color:var(--primary); text-decoration:none;">เข้าสู่บทเรียน <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section reveal" id="download-center">
+    <div class="container">
+        <div style="text-align: center; margin-bottom: 40px;">
+    <h2 style="
+        font-size: 2.2rem; 
+        color: #fff; 
+        display: flex; 
+        align-items: center; 
+        justify-content: center; 
+        gap: 15px;
+        text-shadow: 0 0 20px rgba(231, 76, 60, 0.3);
+    ">
+        <span style="background: #e74c3c; padding: 5px 15px; border-radius: 12px; font-size: 1.2rem; vertical-align: middle;">PDF</span> 
+        ดาวน์โหลดเอกสารประกอบการเรียน
+    </h2>
+    <p style="color: #94a3b8; margin-top: 10px;">รวบรวมไฟล์สรุปเนื้อหาสำคัญในรูปแบบไฟล์ดิจิทัล</p>
+</div>
+        
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;">
+            
+            <div class="card" style="text-align: center; padding: 1.5rem;">
+                <i class="fas fa-file-pdf fa-2x" style="color: #e74c3c; margin-bottom: 10px;"></i>
+                <h4>บทที่ 1: ระบบจำนวนจริง</h4>
+                <a href="บทที่ 1 ระบบจำนวนจริง.pdf" download class="btn" style="margin-top: 15px; width: 100%;">ดาวน์โหลดไฟล์</a>
+            </div>
+
+            <div class="card" style="text-align: center; padding: 1.5rem;">
+                <i class="fas fa-file-pdf fa-2x" style="color: #e74c3c; margin-bottom: 10px;"></i>
+                <h4>บทที่ 2: ระบบเลขฐาน</h4>
+                <a href="บทที่ 2 ระบบเลขฐาน.pdf" download class="btn" style="margin-top: 15px; width: 100%;">ดาวน์โหลดไฟล์</a>
+            </div>
+
+            <div class="card" style="text-align: center; padding: 1.5rem;">
+                <i class="fas fa-file-pdf fa-2x" style="color: #e74c3c; margin-bottom: 10px;"></i>
+                <h4>บทที่ 3: การคำนวณเลขฐาน</h4>
+                <a href="บทที่ 3 การคำนวณเลขฐาน.pdf" download class="btn" style="margin-top: 15px; width: 100%;">ดาวน์โหลดไฟล์</a>
+            </div>
+
+            <div class="card" style="text-align: center; padding: 1.5rem;">
+                <i class="fas fa-file-pdf fa-2x" style="color: #e74c3c; margin-bottom: 10px;"></i>
+                <h4>บทที่ 4: ตรรกศาสตร์</h4>
+                <a href="บทที่ 4 ตรรกศาสตร์.pdf" download class="btn" style="margin-top: 15px; width: 100%;">ดาวน์โหลดไฟล์</a>
+            </div>
+
+            <div class="card" style="text-align: center; padding: 1.5rem;">
+                <i class="fas fa-file-pdf fa-2x" style="color: #e74c3c; margin-bottom: 10px;"></i>
+                <h4>บทที่ 5: พีชคณิตบูลลีน</h4>
+                <a href="บทที่ 5 พีชคณิต.pdf" download class="btn" style="margin-top: 15px; width: 100%;">ดาวน์โหลดไฟล์</a>
+            </div>
+
+            <div class="card" style="text-align: center; padding: 1.5rem;">
+                <i class="fas fa-file-pdf fa-2x" style="color: #e74c3c; margin-bottom: 10px;"></i>
+                <h4>บทที่ 6: เมทริกซ์</h4>
+                <a href="บทที่ 6 เมทริกซ์.pdf" download class="btn" style="margin-top: 15px; width: 100%;">ดาวน์โหลดไฟล์</a>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+    <footer style="text-align: center; padding: 40px; border-top: 1px solid var(--glass-border); color: #64748b;">
+        <p>&copy; 2026 MathX Media - Computer Mathematics Learning Portal</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html><div class="nav-left">
+    <a href="index.html" style="text-decoration: none; display: flex; align-items: center; color: inherit;">
+        <img src="logo.png" alt="Logo" class="logo-img"> 
+        <span class="logo-text" style="cursor: pointer;">MathX Media</span>
+    </a>
+</div>

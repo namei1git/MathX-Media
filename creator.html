@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ผู้จัดทำ | MathX Media</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            background-color: #0f172a;
+            color: #f8fafc;
+        }
+
+        .creator-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 3rem;
+        }
+
+        .creator-card {
+            background: rgba(30, 41, 59, 0.7);
+            border-radius: 20px;
+            padding: 2rem;
+            text-align: center;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            transition: all 0.3s ease;
+        }
+
+        .creator-card:hover {
+            transform: translateY(-10px);
+            border-color: #38bdf8;
+            box-shadow: 0 10px 30px rgba(56, 189, 248, 0.2);
+        }
+
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin: 0 auto 1.5rem;
+            border: 4px solid #38bdf8;
+            overflow: hidden; /* บังคับให้รูปที่เกินออกมาถูกตัดเป็นวงกลม */
+        }
+
+        .profile-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* ทำให้รูปไม่เบี้ยวแม้ต้นฉบับไม่ใช่จัตุรัส */
+            display: block;
+        }
+
+        .creator-name {
+            font-size: 1.4rem;
+            color: #f8fafc;
+            margin-bottom: 0.5rem;
+        }
+
+        .creator-role {
+            color: #38bdf8;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 1rem;
+            display: block;
+        }
+
+        .social-links {
+            margin-top: 1.5rem;
+        }
+
+        .social-links a {
+            color: #94a3b8;
+            font-size: 1.4rem;
+            margin: 0 10px;
+            transition: 0.3s;
+        }
+
+        .social-links a:hover {
+            color: #38bdf8;
+            transform: scale(1.2);
+            display: inline-block;
+        }
+
+        .btn-back {
+            background: rgba(56, 189, 248, 0.1);
+            color: #38bdf8;
+            border: 1px solid #38bdf8;
+            padding: 0.8rem 2rem;
+            border-radius: 50px;
+            text-decoration: none;
+            transition: 0.3s;
+            display: inline-block;
+            margin-top: 4rem;
+        }
+
+        .btn-back:hover {
+            background: #38bdf8;
+            color: #0f172a;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">MathX <span>Creator</span></div>
+            <ul class="nav-links">
+                <li><a href="index.html">หน้าแรก</a></li>
+                <li><a href="video.html">คลังวิดีโอ</a></li>
+                <li><a href="about.html">เกี่ยวกับเรา</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        
+       <div class="reveal" style="text-align: center; margin-top: 3rem;">
+    <h1 style="
+        font-size: 2.5rem; 
+        display: inline-block; 
+        border: 2px solid #38bdf8; 
+        padding: 10px 30px; 
+        border-radius: 50px; 
+        background: rgba(56, 189, 248, 0.1);
+        box-shadow: 0 0 15px rgba(56, 189, 248, 0.3);
+        margin-bottom: 15px;
+    ">คณะผู้จัดทำ</h1>
+    <p style="color: #94a3b8;">นักเรียนระดับชั้น ปวช. แผนกวิชาเทคโนโลยีสารสนเทศ</p>
+</div>
+
+        <div class="creator-grid">
+            
+            <div class="creator-card reveal" style="animation-delay: 0.1s;">
+                <div class="profile-img">
+                    <img src="narawich.JPG" alt="นราวิชญ์"> </div>
+                <span class="creator-role">Project Leader / Dev</span>
+                <h3 class="creator-name">นายนราวิชญ์ ไชยเรียน</h3>
+                <p style="color: #94a3b8;">โครงสร้างเว็บไซต์ และการเขียนโปรแกรม</p>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/name.narawich/" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/_nam.ei/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="mailto:narawichchairian@gmail.com"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+
+            <div class="creator-card reveal" style="animation-delay: 0.3s;">
+                <div class="profile-img">
+                    <img src="natnicha.jpg" alt="ณัฐณิชา"> </div>
+                <span class="creator-role">UI/UX Designer</span>
+                <h3 class="creator-name">นางสาวณัฐณิชา สุคำ</h3>
+                <p style="color: #94a3b8;">ออกแบบหน้าตาเว็บ และภาพกราฟิก</p>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/natnicha.sukham.2024" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/nat_nicha.xxa/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="mailto:natnichachahh@icloud.com"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+
+            <div class="creator-card reveal" style="animation-delay: 0.5s;">
+                <div class="profile-img">
+                    <img src="jiruchchaya.JPG" alt="จิรัชญา"> </div>
+                <span class="creator-role">Content Manager</span>
+                <h3 class="creator-name">นางสาวจิรัชญา สายสีไชย</h3>
+                <p style="color: #94a3b8;">รวบรวมวิดีโอ และจัดทำแบบฝึกหัด</p>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/la.hliw.537319" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/llrxkpj__/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="mailto:jsaisrichai@gmail.com"><i class="fas fa-envelope"></i></a>
+            </div>
+
+        </div>
+
+        <div style="text-align: center; margin-bottom: 4rem;">
+            <a href="index.html" class="btn-back">กลับสู่หน้าหลัก</a>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+<div class="nav-left">
+    <a href="index.html" style="text-decoration: none; display: flex; align-items: center; color: inherit;">
+        <img src="logo.png" alt="Logo" class="logo-img"> 
+        <span class="logo-text" style="cursor: pointer;">MathX Media</span>
+    </a>
+</div>
