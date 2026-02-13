@@ -128,3 +128,9 @@ nav {
 @media (max-width: 768px) {
     .nav-links { display: none; }
 }
+
+audio {
+    filter: sepia(20%) saturate(70%) grayscale(1) contrast(99%) invert(12%); /* ปรับสีให้เข้ากับโทน Dark */
+    height: 40px;
+    width: 280px;
+}
